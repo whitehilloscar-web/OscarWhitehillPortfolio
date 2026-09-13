@@ -4,34 +4,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Portfolio of Oscar Whitehill, a 3D environment and hard-surface artist working in Maya, Substance and Unreal Engine.">
-  <title>Oscar Whitehill — 3D Artist</title>
+  <title>Oscar Whitehill — 3D Artist &amp; Visual Designer</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="homepage-fixes.css">
+  <link rel="stylesheet" href="layout-fixes.css">
+  <link rel="stylesheet" href="software-grid.css">
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="index.html">Oscar Whitehill</a>
-    <p class="header-role">3D Artist · South Wales</p>
+    <p class="header-role">3D Artist &amp; Visual Designer</p>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
-    <nav id="main-nav" aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <nav id="main-nav" aria-label="Main navigation"><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
   </header>
 
   <main>
     <section class="intro" aria-labelledby="intro-title">
       <p class="kicker">Portfolio / 2026</p>
-      <h1 id="intro-title">3D environments,<br>vehicles &amp; visual design.</h1>
-      <p class="intro-copy">First-Class Game Art &amp; Design graduate focused on believable real-time assets, grounded material work and clear visual presentation.</p>
+      <div class="intro-art"><img src="assets/tiger-hero.webp" alt="Tiger II 1946 real-time vehicle artwork" fetchpriority="high"></div>
+      <h1 id="intro-title">3D Artist &amp; Visual Designer</h1>
+      <p class="intro-copy">First-Class Game Art &amp; Design graduate currently developing this portfolio while working towards a junior 3D artist role. My work focuses on believable real-time assets, grounded materials and clear visual presentation.</p>
     </section>
 
     <section class="work-section" id="work" aria-labelledby="work-title">
-      <div class="work-heading"><h2 id="work-title">Selected projects <span>(03)</span></h2><div class="filters" aria-label="Project categories"><span>All</span><span>Vehicle</span><span>Environment</span><span>Graphic design</span></div></div>
+      <div class="work-heading"><h2 id="work-title">Selected projects <span>(03)</span></h2></div>
       <div class="project-grid">
+        <a class="project-card" href="projects/modular-house.html">
+          <div class="project-thumb modular-reference-thumb"><img src="assets/modular-reference-main.webp" alt="American house used as architectural reference for the modular kit"></div>
+          <div class="project-meta"><div><h3>Modular House Kit</h3><p>Environment Art · <strong class="project-status">In progress</strong></p></div><span>01</span></div>
+        </a>
         <a class="project-card" href="projects/tiger-ii.html">
           <div class="project-thumb"><img src="assets/tiger-hero.webp" alt="Tiger II 1946 vehicle artwork"></div>
-          <div class="project-meta"><div><h3>Tiger II — 1946</h3><p>Real-time Vehicle Art</p></div><span>01</span></div>
-        </a>
-        <a class="project-card" href="projects/modular-house.html">
-          <div class="project-thumb placeholder-thumb"><span>MODULAR<br>HOUSE KIT</span></div>
-          <div class="project-meta"><div><h3>Modular House Kit</h3><p>Environment Art · In progress</p></div><span>02</span></div>
+          <div class="project-meta"><div><h3>Tiger II — 1946</h3><p>Real-time Vehicle Art</p></div><span>02</span></div>
         </a>
         <a class="project-card" href="projects/buried.html">
           <div class="project-thumb poster-thumb"><img src="assets/buried-poster.webp" alt="Buried crew-call poster"></div>
@@ -40,14 +44,20 @@
       </div>
     </section>
 
-    <section class="about-section" id="about" aria-labelledby="about-title">
-      <p class="section-label">About /</p>
-      <div><h2 id="about-title">Building detailed assets for believable worlds.</h2><p>I specialise in environment, vehicle and prop art. My process covers research, modelling, UVs, baking, material creation, texturing, optimisation and presentation in Unreal Engine.</p></div>
-      <ul aria-label="Software"><li>Maya</li><li>Unreal Engine 5</li><li>Substance 3D Painter</li><li>Substance 3D Designer</li><li>Blender</li><li>Affinity Designer</li></ul>
+    <section class="about-section skills-section" id="skills" aria-labelledby="skills-title">
+      <p class="section-label">Skills /</p>
+      <div class="skills-intro"><h2 id="skills-title">A complete workflow from asset creation to presentation.</h2><p>I create game-ready environments, vehicles and props from initial research through modelling, UV preparation, baking, texturing, optimisation and final presentation.</p></div>
+      <div class="skill-groups">
+        <article class="skill-group"><p class="skill-number">01</p><h3>3D Modelling</h3><p>I use Maya as my main modelling package for hard-surface assets, modular kits, clean topology and UV preparation, with Blender supporting sculpting and additional asset work.</p><div class="skill-tools"><a href="https://www.autodesk.com/products/maya/overview" target="_blank" rel="noopener"><span class="software-icon"><img src="assets/software/maya.webp" alt="Maya logo"></span><span>Maya</span></a><a href="https://www.blender.org/" target="_blank" rel="noopener"><span class="software-icon"><img src="assets/software/blender.webp" alt="Blender logo"></span><span>Blender</span></a></div></article>
+        <article class="skill-group"><p class="skill-number">02</p><h3>Texturing &amp; Materials</h3><p>I bake and texture assets in Substance 3D Painter, building believable surface variation, wear and weathering. In Designer, I create reusable procedural materials and masks.</p><div class="skill-tools"><a href="https://www.adobe.com/products/substance3d/apps/painter.html" target="_blank" rel="noopener"><span class="software-icon"><img src="assets/software/substance-painter.webp" alt="Substance 3D Painter logo"></span><span>Substance 3D Painter</span></a><a href="https://www.adobe.com/products/substance3d/apps/designer.html" target="_blank" rel="noopener"><span class="software-icon"><img src="assets/software/substance-designer.webp" alt="Substance 3D Designer logo"></span><span>Substance 3D Designer</span></a></div></article>
+        <article class="skill-group"><p class="skill-number">03</p><h3>Real-Time Production</h3><p>I assemble and present assets in Unreal Engine 5, creating materials, lighting scenes, Niagara effects and polished real-time renders that communicate the finished work clearly.</p><div class="skill-tools"><a href="https://www.unrealengine.com/" target="_blank" rel="noopener"><span class="software-icon software-icon--unreal"><img src="assets/software/unreal-engine.webp" alt="Unreal Engine logo"></span><span>Unreal Engine 5</span></a></div></article>
+        <article class="skill-group"><p class="skill-number">04</p><h3>Visual Design</h3><p>I use Photoshop and Affinity Designer for image editing, colour work, layout and promotional graphics, supporting both portfolio presentation and client-facing design work.</p><div class="skill-tools"><a href="https://www.adobe.com/products/photoshop.html" target="_blank" rel="noopener"><span class="software-icon"><img src="assets/software/photoshop.webp" alt="Adobe Photoshop logo"></span><span>Photoshop</span></a><a href="https://affinity.serif.com/designer/" target="_blank" rel="noopener"><span class="software-icon"><img src="assets/software/affinity-designer.webp" alt="Affinity Designer logo"></span><span>Affinity Designer</span></a><a href="https://www.adobe.com/creativecloud.html" target="_blank" rel="noopener"><span class="software-icon"><img src="assets/software/adobe-creative-cloud.webp" alt="Adobe Creative Cloud logo"></span><span>Adobe Creative Suite</span></a></div></article>
+        <article class="skill-group"><p class="skill-number">05</p><h3>Video Editing</h3><p>I edit footage and project reels in DaVinci Resolve, using pacing, colour correction, audio and titles to present creative work in a clear and engaging format.</p><div class="skill-tools"><a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" rel="noopener"><span class="software-icon"><img src="assets/software/davinci-resolve.webp" alt="DaVinci Resolve logo"></span><span>DaVinci Resolve</span></a></div></article>
+      </div>
     </section>
   </main>
 
-  <footer id="contact"><div><p class="section-label">Contact /</p><h2>Available for junior<br>3D opportunities.</h2></div><div class="footer-links"><a href="mailto:whitehill.oscar@gmail.com">Email</a><a href="#">ArtStation</a><a href="#">LinkedIn</a><a href="#">CV</a></div><p class="copyright">© <span id="year">2026</span> Oscar Whitehill</p></footer>
+  <footer id="contact"><div><p class="section-label">Contact /</p><h2>Available for junior<br>3D opportunities.</h2></div><div class="footer-links"><a href="mailto:Whitehill.oscar@gmail.com"><span>Email</span><strong>Whitehill.oscar@gmail.com</strong></a><a href="https://www.artstation.com/whites051" target="_blank" rel="noopener"><span>ArtStation</span><strong>whites051 ↗</strong></a><a href="https://www.linkedin.com/in/oscar-whitehill-14b392265" target="_blank" rel="noopener"><span>LinkedIn</span><strong>Oscar Whitehill ↗</strong></a><span class="footer-link-pending"><span>CV</span><strong>Coming soon</strong></span></div><p class="copyright">© <span id="year">2026</span> Oscar Whitehill</p></footer>
   <script src="script.js"></script>
 </body>
 </html>
